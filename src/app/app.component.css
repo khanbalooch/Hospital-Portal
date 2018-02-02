@@ -1,0 +1,10 @@
+.body{
+    width: 100%;
+    position: relative; 
+        /* updated to support footer push */
+        min-height: 100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        height: 100%;
+        box-sizing: border-box;
+}

@@ -1,0 +1,67 @@
+.mainBody{
+    background-color: green;
+    width: 100%;
+    height: auto;
+}
+.infoBar{
+    color: white;
+    margin: 1%;
+}
+  .midName{
+    vertical-align: middle;
+  }
+  .darkName{
+      color: darkgrey;
+      
+  }
+.brightName{
+    font-weight: bold;
+}
+
+ul {
+    border: solid 1px #4CAF50;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+}
+
+li {
+
+    float: left;
+    border-right:1px solid white;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #4CAF50;
+    color:white;
+}
+.header{
+    background-color: white;
+}
+.header img {
+    float: left;
+    width: 130px;
+    height: 120px;
+    padding: 1%;
+}
+  
+  .header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+  

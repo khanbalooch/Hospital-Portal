@@ -1,0 +1,22 @@
+h3{
+    color:green;
+}
+p {
+    line-height: 1.6; 
+    font-family: Helvetica;
+    text-align: justify;
+    margin: 0;
+    font-size: 14px;
+}
+.name{
+    text-align: right ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}

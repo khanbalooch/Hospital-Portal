@@ -1,0 +1,45 @@
+.scroll-to-top {
+    position: fixed;
+    opacity: 0;
+    right:20px;
+    bottom:20px;
+    background: grey;
+    color: white;
+    padding:20px;
+    text-align: center;
+    margin: 0 0 0 0;
+    cursor:pointer;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s; 	
+    font-size: 30px;
+    border-radius: 5%;
+}
+
+.show-scroll {
+    opacity: 1;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.scroll-to-top:hover {
+    
+    color: green;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s; 		
+}
+.scroll-to-top:hover .fa {
+    padding-top:-10px;
+}
+.scroll-to-top .fa {
+    font-size:30px;
+    margin-top:-5px;
+    margin-left:1px;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s; 	
+}
