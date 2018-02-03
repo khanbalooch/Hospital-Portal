@@ -35,6 +35,10 @@ import { DownloadsComponent } from './components/downloads/downloads.component';
 import { CircleCardComponent } from './shared/components/circle-card/circle-card.component';
 import { HrTabComponent } from './shared/components/hr-tab/hr-tab.component';
 import { ProfileCardComponent } from './shared/components/profile-card/profile-card.component';
+import { InfoBarComponent } from './shared/components/header/info-bar/info-bar.component';
+import { NameLogoComponent } from './shared/components/header/name-logo/name-logo.component';
+import { NavBarComponent } from './shared/components/header/nav-bar/nav-bar.component';
+import { TimingsComponent } from './components/home/timings/timings.component';
 
 
 @NgModule({
@@ -69,7 +73,11 @@ import { ProfileCardComponent } from './shared/components/profile-card/profile-c
     DownloadsComponent,
     CircleCardComponent,
     HrTabComponent,
-    ProfileCardComponent
+    ProfileCardComponent,
+    InfoBarComponent,
+    NameLogoComponent,
+    NavBarComponent,
+    TimingsComponent
   ],
   imports: [
     BrowserModule,

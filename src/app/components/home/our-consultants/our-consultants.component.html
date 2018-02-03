@@ -1,22 +1,15 @@
 <div class="container">
 
-    <div class="row">
+    <div class="row text-center">
         <h1>Our Consultants</h1>
       
     </div>
-    <div class="row">
-            <marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();"></marquee>
-        <div class="col-md-3">
-            <app-avatar-card imagePath="./assets/images/doctor.png" name="Dr.Sharif" designation="phy" qualification="mbbs"></app-avatar-card>
-        </div>
-        <div class="col-md-3">
-                <app-avatar-card imagePath="./assets/images/doctor.png" name="Dr.Sharif" designation="phy" qualification="mbbs"></app-avatar-card>
-        </div>
-        <div class="col-md-3">
-                <app-avatar-card imagePath="./assets/images/doctor.png" name="Dr.Sharif" designation="phy" qualification="mbbs"></app-avatar-card>
-        </div>
-        <div class="col-md-3">
-                <app-avatar-card imagePath="./assets/images/doctor.png" name="Dr.Sharif" designation="phy" qualification="mbbs"></app-avatar-card>
-        </div>
+    <div class="row consultantPanel">
+            <app-profile-card name="Dr. Muhammad Sharif" designation="Consultant Physician" picturePath="./assets/images/doctors/doctor.png"></app-profile-card>
+            <app-profile-card name="Dr. Kamaran Sharafat" designation="Consultant Pediatrician" qualification="M.B.B.S, DCH" picturePath="./assets/images/doctors/doctor.png" ></app-profile-card>
+            <app-profile-card name="Dr. Firdous Jahan" designation="Consultant Gynecologist" qualification="M.B.B.S, MCPS" picturePath="./assets/images/doctors/ladydoctor.png" ></app-profile-card>
+            <app-profile-card name="Dr. Maqbool Hussain" designation="Consultant Surgeon" qualification="" picturePath="./assets/images/doctors/doctor.png" ></app-profile-card>
+            
+           
     </div>
 </div>

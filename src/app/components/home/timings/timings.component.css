@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+}
+.timingPanel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.timingCard{
+    padding: 1%;
+    width: 350px;
+    height: 400px;
+    background-color: aquamarine;
+    color:white;
+    font-family: Helvetica, san-serif;
+    
+}
+.title{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 30px;
+}
+.content{
+    text-align: center;
+    margin-top:50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    font-size: 15px;
+}

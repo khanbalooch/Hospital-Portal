@@ -13,12 +13,7 @@ html {
   body {
     position: relative;
     margin: 0;
-    padding-bottom: 40rem;
-    min-height: 100%;
     font-family: "Helvetica Neue", Arial, sans-serif;
   }
   
-  /**
-   * Footer Styles
-   */
   

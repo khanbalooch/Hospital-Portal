@@ -1,35 +1,17 @@
 <div class="container mainBody">
 
-    <div class="row infoBar">
-        <div class="col-md-4">
-                24/7 Emergency Services ( <span class="glyphicon">&#xe182;</span>   0453-9200197 )
-        </div>
-        <div class="col-md-8 text-right">
-              <p class="glyphicon"> &#x2709;</p>  info@thqhospitalkpecca
-        </div>
-    </div>
+    <app-info-bar></app-info-bar>
 
     <div class="row header">
-            <img src="./assets/images/gov.png"/>
-            <h2>      
-                <p class="darkName">TEHSIL HEADQUARTER</p>
-                <p class="brightName">HOSPITAL KEHROR PACCA</p>
-            </h2>
+            
+        <div class="col-md-4">
+            <a routerLink="/home">
+                <app-name-logo></app-name-logo>
+            </a>
+        </div>      
+            
+        <div class="col-md-8">
+            <app-nav-bar></app-nav-bar>            
+        </div>
     </div>
-
-    <div class="row">
-            <div class="col">
-                <ul>
-                    <li><a routerLink="/home">HOME</a></li>
-                    <li><a routerLink="/abouthospital">ABOUT HOSPITAL</a></li>
-                    <li><a routerLink="/services">SERVICES</a></li>
-                    <li><a routerLink="/ourstaff">OUR STAFF</a></li>
-                    <li><a routerLink="/downloads">DOWNLOADS</a></li>
-                    <li><a routerLink="/revamping">REVAMPING</a></li>
-                    <li><a routerLink="/messages">MESSAGES</a></li>
-                    <li><a routerLink="/contact">CONTACT</a></li>
-                </ul>
-            </div>
-    </div>
-
 </div>
