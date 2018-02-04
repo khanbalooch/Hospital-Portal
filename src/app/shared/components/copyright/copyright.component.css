@@ -1,7 +1,9 @@
 .mainCopyRight{
     background-color: grey;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:1%;
+    padding-right: 100px;
     left:0;
     right: 0px;
 }

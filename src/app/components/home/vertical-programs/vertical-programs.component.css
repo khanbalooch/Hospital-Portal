@@ -1,0 +1,28 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+h1{
+    color: green;
+}
+.itemPanel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    transition-duration: 5s;
+    
+}
+.itmPanel:hover{
+    margin-left: -1880px;
+    transition-duration: 5s;
+}
+.leftArrow{
+    position: absolute;
+    font-size: 60px;
+    left:20px;
+    bottom:80px;
+}
+.container{
+  width: 99.99%;
+  background-color: bisque;
+}
