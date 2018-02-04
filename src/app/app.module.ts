@@ -39,6 +39,7 @@ import { InfoBarComponent } from './shared/components/header/info-bar/info-bar.c
 import { NameLogoComponent } from './shared/components/header/name-logo/name-logo.component';
 import { NavBarComponent } from './shared/components/header/nav-bar/nav-bar.component';
 import { TimingsComponent } from './components/home/timings/timings.component';
+import { CareersComponent } from './components/careers/careers.component';
 
 
 @NgModule({
@@ -77,7 +78,8 @@ import { TimingsComponent } from './components/home/timings/timings.component';
     InfoBarComponent,
     NameLogoComponent,
     NavBarComponent,
-    TimingsComponent
+    TimingsComponent,
+    CareersComponent
   ],
   imports: [
     BrowserModule,

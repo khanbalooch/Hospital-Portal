@@ -8,6 +8,7 @@ import { RevampingComponent } from './components/revamping/revamping.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { DownloadsComponent } from './components/downloads/downloads.component';
+import { CareersComponent } from './components/careers/careers.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'downloads', component: DownloadsComponent},
   { path: 'revamping', component: RevampingComponent},
   { path: 'messages', component: MessagesComponent},
+  { path: 'careers', component: CareersComponent},
   { path: 'contact', component: ContactComponent}
 ];
 @NgModule({
