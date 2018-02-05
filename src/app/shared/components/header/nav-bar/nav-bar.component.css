@@ -14,7 +14,7 @@
 .navbar .navbar-nav > li > a {
     color: black;
     background-color: white;
-    font-size: 15px;
+    font-size:15px;
 }
 .navbar .navbar-nav > li > a::after {
     content: '';
