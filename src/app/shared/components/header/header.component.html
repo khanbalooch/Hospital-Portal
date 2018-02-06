@@ -1,9 +1,7 @@
 <div class="container mainBody">
-
     <app-info-bar></app-info-bar>
-
-    <div class="row header">
-            
+   <!--------------------old content
+     <div class="row header">   
         <div class="col-sm-3">
             <a routerLink="/home">
                 <app-name-logo></app-name-logo>
@@ -13,5 +11,27 @@
         <div class="col-sm-9">
             <app-nav-bar></app-nav-bar>            
         </div>
+        --------------------------->
+<!------------------------------>
+<div class="row header">
+    <div class="col col-sm-6 col-xs-12">
+        <a routerLink="/home" class="lt">
+            <app-kp-logo></app-kp-logo>
+        </a>
+        <!-----Gov logo placeholder------>
     </div>
+    <div class="col col-sm-6 col-xs-12">        
+        <a routerLink="/home" class="rt">
+            <app-name-logo></app-name-logo>
+            
+        </a>
+        <!-----kp logo placeholder------>
+    </div>
+    <div class="col col-xs-12" id="navigation-container">
+        <app-nav-bar></app-nav-bar> 
+    </div>
+</div>
+<!------------------------------>
+
+<!---  </div>end of header row ----->
 </div>

@@ -11,6 +11,7 @@
     border:none;
     background-color: white;
 }
+
 .navbar .navbar-nav > li > a {
     color: black;
     background-color: white;
@@ -41,7 +42,7 @@
     .nav>li>a{ padding: 10px 6px;} 
 }
 @media screen and (max-width:1250px){
-    .navbar-nav>li>a { font-size: 12px !important;}
+    /*.navbar-nav>li>a { font-size: 12px !important;}*/
 }
 @media screen and (max-width:1110px){
     .navbar > div,
@@ -51,10 +52,10 @@
 }
 @media screen and (max-width:1110px){
     .nav>li>a{ padding: 10px 4px;}
-    .navbar-nav>li>a { font-size: 10px !important;}
+    /*.navbar-nav>li>a { font-size: 10px !important;}*/
 }
-@media screen and (max-width:880px){
-    .navbar-nav>li>a { font-size: 8px !important;}
+@media screen and (max-width:850px){
+    .navbar-nav>li>a { font-size: 12px !important;}
 }
 @media screen and (max-width:768px){    
     .nav>li>a{ padding: 10px;} 
@@ -78,4 +79,12 @@
         color: white !important;
     }
     
+}
+@media screen and (min-width:768px) {
+    .nav-container{
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        overflow: hidden;
+    }
 }

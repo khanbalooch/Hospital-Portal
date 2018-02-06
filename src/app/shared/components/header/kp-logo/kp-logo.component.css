@@ -1,0 +1,21 @@
+.img-container{
+    margin: 10px;
+    width: 400px;
+    height: 100px;
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+  .lt {
+    float: left;
+  }
+  @media screen and (max-width:768px) {
+    .img-container{
+        margin: 12px auto !important;
+    }
+    .lt {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+  }

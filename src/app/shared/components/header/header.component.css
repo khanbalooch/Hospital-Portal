@@ -9,3 +9,31 @@
     border-bottom: 2px solid green;
 }
 
+.sticky {
+    display: block;
+    z-index: 9999;
+    background:#fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+ 
+
+.rt {
+    float: right;
+}
+.lt {
+    float: left;
+}
+@media screen and (max-width:768px){
+    .lt,
+    .rt {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+}
