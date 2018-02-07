@@ -13,6 +13,8 @@ export class HeaderComponent implements OnInit {
 /*
 customization by _tyb
  */
+
+ /*******************************************************************
     window.onscroll = function() {scrollFunc()};
     var header = document.getElementById("navigation-container");
     var sticky = header.offsetTop;
@@ -26,7 +28,7 @@ customization by _tyb
       }
      
     }
-
+***************************************************/
   }
 
 }
