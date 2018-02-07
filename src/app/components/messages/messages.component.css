@@ -27,3 +27,21 @@
     font-weight: bold;
     font-size: 2em;    
   }
+  .panel-heading{
+    background-color: rgb(39, 179, 39);
+    cursor: pointer;
+    height: 50px;
+}
+.panel-title{
+    color:white;
+    font-weight: bolder;
+    padding:7px;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.conatiner{
+  width: 90%;
+}

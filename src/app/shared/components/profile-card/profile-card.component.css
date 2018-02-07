@@ -8,7 +8,6 @@
 .wrapper:hover{
     background-color: lightgreen;
     transition-duration: 1s;
-
 }
 img{
     margin: 5%;;
