@@ -40,6 +40,8 @@ import { NameLogoComponent } from './shared/components/header/name-logo/name-log
 import { NavBarComponent } from './shared/components/header/nav-bar/nav-bar.component';
 import { TimingsComponent } from './components/home/timings/timings.component';
 import { CareersComponent } from './components/careers/careers.component';
+import { KpLogoComponent } from './shared/components/header/kp-logo/kp-logo.component';
+
 
 
 @NgModule({
@@ -79,7 +81,8 @@ import { CareersComponent } from './components/careers/careers.component';
     NameLogoComponent,
     NavBarComponent,
     TimingsComponent,
-    CareersComponent
+    CareersComponent,
+    KpLogoComponent
   ],
   imports: [
     BrowserModule,
