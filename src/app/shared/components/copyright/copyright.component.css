@@ -1,12 +1,16 @@
 .mainCopyRight{
-    background-color: grey;
+    background-color: #231E22;
+    color: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left:1%;
-    padding-right: 100px;
+    padding-right: 70px;
     left:0;
     right: 0px;
-    
+}
+.ftr-container {
+    width: 98%;
+    margin: 0 auto;
 }
 @media screen and (max-width:768px){
     .mainCopyRight > div > div > p{

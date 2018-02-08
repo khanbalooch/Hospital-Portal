@@ -14,6 +14,9 @@ export class NavBarComponent implements OnInit {
     /*
     customization by _tyb
     */
+    /*================
+    Sticky Header
+    ===================*/ 
     window.onscroll = function() {myFunc()};
     var header = document.getElementById("navigation-container");
     var innerNav = document.getElementById("inner-nav");
@@ -24,14 +27,30 @@ export class NavBarComponent implements OnInit {
       if (window.pageYOffset >= sticky) {
         header.classList.add("sticky");
         innerNav.classList.add("sticky-inside");
-       console.log("eeeeee");
       } else {
         header.classList.remove("sticky");
         innerNav.classList.remove("sticky-inside");
-        console.log("ooooo");
       }
     
     }   
+/*=============================
+    Add/Remove Active Class
+===============================*/
+
+var NavBar = document.getElementById("myNavbar");
+//var navLinks = NavBar.getElementsByTagName("a");
+var btns = NavBar.getElementsByClassName("navBtn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+/******************************************************** */
+
+
+
 
  
   }
