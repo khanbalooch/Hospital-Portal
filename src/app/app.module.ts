@@ -41,6 +41,7 @@ import { NavBarComponent } from './shared/components/header/nav-bar/nav-bar.comp
 import { TimingsComponent } from './components/home/timings/timings.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { KpLogoComponent } from './shared/components/header/kp-logo/kp-logo.component';
+import { GopLoaderComponent } from './shared/components/gop-loader/gop-loader.component';
 
 
 
@@ -82,7 +83,8 @@ import { KpLogoComponent } from './shared/components/header/kp-logo/kp-logo.comp
     NavBarComponent,
     TimingsComponent,
     CareersComponent,
-    KpLogoComponent
+    KpLogoComponent,
+    GopLoaderComponent
   ],
   imports: [
     BrowserModule,

@@ -11,13 +11,14 @@
 
 .sticky {
     display: block;
-    z-index: 9999;
+    z-index: 999999999999999;
     background:#fff;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
+    border-bottom: 2px solid green;
   }
  
 
