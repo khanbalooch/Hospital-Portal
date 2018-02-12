@@ -13,7 +13,10 @@ export class GopLoaderComponent implements OnInit {
 
     function load() {
       //console.log("load event detected!");
-      document.getElementById("gop-container").style.display = "none";
+      //document.getElementById("gop-container").style.display = "none";
+      setTimeout(function(){ 
+        document.getElementById("gop-container").style.display = "none";
+      }, 3000);
     }
     window.onload = load;
 
