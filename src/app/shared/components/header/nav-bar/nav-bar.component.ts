@@ -16,7 +16,8 @@ export class NavBarComponent implements OnInit {
     */
     /*================
     Sticky Header
-    ===================*/ 
+    ===================*/
+    /* 
     window.onscroll = function() {myFunc()};
     var header = document.getElementById("navigation-container");
     var innerNav = document.getElementById("inner-nav");
@@ -33,6 +34,7 @@ export class NavBarComponent implements OnInit {
       }
     
     }   
+    */
 /*=============================
     Add/Remove Active Class
 ===============================*/

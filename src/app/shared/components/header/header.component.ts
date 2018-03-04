@@ -14,21 +14,29 @@ export class HeaderComponent implements OnInit {
 customization by _tyb
  */
 
- /*******************************************************************
+ /*******************************************************************/
     window.onscroll = function() {scrollFunc()};
-    var header = document.getElementById("navigation-container");
+    var header = document.getElementById("header-scroll");
+    var logoImgLt = document.getElementById("logoLt");
+    var logoImgRt = document.getElementById("logoRt");
     var sticky = header.offsetTop;
+    
     
     function scrollFunc() {
 
       if (window.pageYOffset >= sticky) {
         header.classList.add("sticky");
+        logoImgLt.classList.add("minWidth");
+        logoImgRt.classList.add("minWidth");
+
       } else {
         header.classList.remove("sticky");
+        logoImgLt.classList.remove("minWidth");
+        logoImgRt.classList.remove("minWidth");
       }
      
     }
-***************************************************/
+/***************************************************/
   }
 
 }
