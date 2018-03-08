@@ -11,7 +11,9 @@ export class ValidationService {
           'invalidCreditCard': 'Is invalid credit card number',
           'invalidEmailAddress': 'Invalid email address',
           'invalidPassword': 'Invalid password. Password must be at least 6 characters long, and contain a number.',
+          'invalidMobileNumber': 'Invalid Mobile Number',
           'minlength': `Minimum length ${validatorValue.requiredLength}`
+          
       };
 
       return config[validatorName];
@@ -44,4 +46,14 @@ export class ValidationService {
           return { 'invalidPassword': true };
       }
   }
+
+  static mobileNumberValidator(control) {
+    // {6,100}           - Assert password is between 6 and 100 characters
+    // (?=.*[0-9])       - Assert a string has at least one number
+    if (control.value.match(/^((\+92)|(0092))-{0,1}\d{3}-{0,1}\d{7}$|^\d{11}$|^\d{4}-\d{7}$/)) {
+        return null;
+    } else {
+        return { 'invalidMobileNumber': true };
+    }
+}
 }

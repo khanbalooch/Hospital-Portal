@@ -17,9 +17,9 @@ export class ContactFormComponent implements OnInit {
    }
 
    createForm() {
-    this.form = this.fb.group({
-      'name': ['', Validators.required],
-      'mobileNumber': ['', Validators.required],
+    this.form = this.fb.group({ // creating form and its applying validators
+      'name': ['', Validators.required],// required validatro
+      'mobileNumber': ['', [Validators.required, ValidationService.mobileNumberValidator]],
       'email': ['', [Validators.required, ValidationService.emailValidator]],
       'message': ['', [ Validators.required, Validators.minLength(20)]],
 
@@ -38,8 +38,8 @@ export class ContactFormComponent implements OnInit {
         <div>Message: ${message}</div>
       `;
       const formRequest = { name, mobileNumber, email, message, date, html };
-      this.afdb.list('/messages').push(formRequest);
-      this.form.reset();
+      this.afdb.list('/messages').push(formRequest);// submit data to firebase
+      this.form.reset(); // reset complete form todo
      }
   }
   ngOnInit() {
