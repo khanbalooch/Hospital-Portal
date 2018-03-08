@@ -23,7 +23,6 @@ customization by _tyb
     
     
     function scrollFunc() {
-      console.log(window.pageYOffset);
       if (window.pageYOffset != sticky) {
         header.classList.add("sticky");
         logoImgLt.classList.add("minWidth");

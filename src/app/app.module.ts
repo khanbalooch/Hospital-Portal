@@ -2,6 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
 import { CountUpModule } from 'countup.js-angular2';
+import { AppRoutingModule } from './/app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { FormsModule } from '@angular/forms';
+import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
@@ -14,7 +20,6 @@ import { OurStaffComponent } from './components/our-staff/our-staff.component';
 import { RevampingComponent } from './components/revamping/revamping.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { AppRoutingModule } from './/app-routing.module';
 import { ImageSliderComponent } from './components/home/image-slider/image-slider.component';
 import { WelcomeNoteComponent } from './components/home/welcome-note/welcome-note.component';
 import { SuccessStatsComponent } from './components/home/success-stats/success-stats.component';
@@ -30,7 +35,6 @@ import { ScrollTopComponent } from './shared/components/scroll-top/scroll-top.co
 import { GmapComponent } from './shared/components/gmap/gmap.component';
 import { SimpleCardComponent } from './shared/components/simple-card/simple-card.component';
 import { ContactItemsComponent } from './components/contact/contact-items/contact-items.component';
-import { MessageFormComponent } from './components/contact/message-form/message-form.component';
 import { DownloadsComponent } from './components/downloads/downloads.component';
 import { CircleCardComponent } from './shared/components/circle-card/circle-card.component';
 import { HrTabComponent } from './shared/components/hr-tab/hr-tab.component';
@@ -42,6 +46,9 @@ import { TimingsComponent } from './components/home/timings/timings.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { KpLogoComponent } from './shared/components/header/kp-logo/kp-logo.component';
 import { GopLoaderComponent } from './shared/components/gop-loader/gop-loader.component';
+import { ContactFormComponent } from './components/contact/contact-form/contact-form.component';
+import { ValidationService } from './shared/services/validation/validation.service';
+import { ControlMessagesComponent } from './shared/components/control-messages/control-messages.component';
 
 
 
@@ -73,7 +80,6 @@ import { GopLoaderComponent } from './shared/components/gop-loader/gop-loader.co
     GmapComponent,
     SimpleCardComponent,
     ContactItemsComponent,
-    MessageFormComponent,
     DownloadsComponent,
     CircleCardComponent,
     HrTabComponent,
@@ -84,18 +90,24 @@ import { GopLoaderComponent } from './shared/components/gop-loader/gop-loader.co
     TimingsComponent,
     CareersComponent,
     KpLogoComponent,
-    GopLoaderComponent
+    GopLoaderComponent,
+    ContactFormComponent,
+    ControlMessagesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CountUpModule,
+    ReactiveFormsModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDeV6qfvZi5y5_kiVGHqCrdT91bi4va_IE'
     })
 
   ],
-  providers: [],
+  providers: [ValidationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

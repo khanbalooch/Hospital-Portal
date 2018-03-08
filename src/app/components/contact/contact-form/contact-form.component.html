@@ -1,0 +1,25 @@
+<div class="container">
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+            <label for="name">Name</label>
+            <input type="text" formControlName="name" id="name" class="form-control">
+            <control-messages [control]="form.controls.name"></control-messages>
+
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="text" formControlName="mobileNumber" id="mobileNumber" class="form-control" >
+            <control-messages [control]="form.controls.mobileNumber"></control-messages>
+
+            <label for="email">Email</label>
+            <input type="text" formControlName="email" id="email" class="form-control" >
+            <control-messages [control]="form.controls.email"></control-messages>
+
+            <label for="message">Your Message</label>
+            <input type="text" formControlName="message" id="message" class="form-control" >
+            <control-messages [control]="form.controls.message"></control-messages>
+
+      <button type="submit" [disabled]="form.invalid" class="btn btn-success">Submit</button>
+
+    </form>
+    
+</div>
