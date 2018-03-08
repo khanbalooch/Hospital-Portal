@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.error{
+    color: #f00;
+}
+input.ng-invalid.ng-touched {
+    border: 1px solid lightcoral;
+}
+input.ng-dirty.ng-valid {
+    border: 1px solid lightgreen;
+}
