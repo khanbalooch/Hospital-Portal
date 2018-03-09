@@ -16,18 +16,18 @@ export class ContactFormComponent implements OnInit {
     this.createForm();
    }
 
+//todo mobile Number validation
    createForm() {
-    this.form = this.fb.group({ // creating form and its applying validators
-      'name': ['', Validators.required],// required validatro
-      'mobileNumber': ['', [Validators.required, ValidationService.mobileNumberValidator]],
-      'email': ['', [Validators.required, ValidationService.emailValidator]],
-      'message': ['', [ Validators.required, Validators.minLength(20)]],
-
+    this.form = this.fb.group({
+      'mobileNumber': ['', [Validators.required]],// ValidationService.mobileNumberValidator]],
+      'message':      ['', [Validators.required, Validators.minLength(20)]],
+      'name':         ['', [Validators.required]],
+      'email':        ['', [Validators.required, ValidationService.emailValidator]]
+      
     });
    }
 
    onSubmit() {
-     if (this.form.dirty && this.form.valid){
       const {name, mobileNumber, email, message} = this.form.value;
       const date = Date();
       const html = `
@@ -38,9 +38,8 @@ export class ContactFormComponent implements OnInit {
         <div>Message: ${message}</div>
       `;
       const formRequest = { name, mobileNumber, email, message, date, html };
-      this.afdb.list('/messages').push(formRequest);// submit data to firebase
+      this.afdb.list('/messages').push(formRequest); // submit data to firebase*/
       this.form.reset(); // reset complete form todo
-     }
   }
   ngOnInit() {
   }
