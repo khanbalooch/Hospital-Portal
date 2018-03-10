@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <form [formGroup]="form" [hidden]="isHidden" (ngSubmit)="onSubmit()">
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" formControlName="name" id="name" class="form-control">
@@ -24,4 +24,9 @@
             <button type="submit" [disabled]="form.invalid" class="btn btn-success">Submit</button>
         </div>
     </form>
+    <div class="successMessage" [hidden]="!isHidden" >
+
+        <h3>Dear {{userName}}! Thank you for contacting us.</h3>
+        <h5>We have received your enquiry and will respond to you within 24 hours.  For urgent enquiries please call us on one of the telephone numbers below.</h5>
+    </div>
 </div>
