@@ -12,11 +12,16 @@
     background-color: white;
     margin: 4px 0;
 }
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #fff;
+    border-color: transparent !important;
+}
 
 .navbar .navbar-nav > li > a {
     color: black;
     background-color: white;
     font-size:15px;
+    outline: none;
 }
 .navbar .navbar-nav > li > a::after {
     content: '';
@@ -99,6 +104,5 @@
         display: inline-block;
         vertical-align: middle;
         text-align: center;
-        overflow: hidden;
     }
 }

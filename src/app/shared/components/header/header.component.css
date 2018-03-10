@@ -28,7 +28,9 @@
 .lt {
     float: left;
 }
-
+.no-pad{
+    padding: 0;
+}
 
 @media screen and (max-width:768px){
     .lt,
