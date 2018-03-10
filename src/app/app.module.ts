@@ -49,6 +49,7 @@ import { GopLoaderComponent } from './shared/components/gop-loader/gop-loader.co
 import { ContactFormComponent } from './components/contact/contact-form/contact-form.component';
 import { ValidationService } from './shared/services/validation/validation.service';
 import { ControlMessagesComponent } from './shared/components/control-messages/control-messages.component';
+import { HomeCircleCardComponent } from './shared/components/home-circle-card/home-circle-card.component';
 
 
 
@@ -92,7 +93,8 @@ import { ControlMessagesComponent } from './shared/components/control-messages/c
     KpLogoComponent,
     GopLoaderComponent,
     ContactFormComponent,
-    ControlMessagesComponent
+    ControlMessagesComponent,
+    HomeCircleCardComponent
   ],
   imports: [
     BrowserModule,
