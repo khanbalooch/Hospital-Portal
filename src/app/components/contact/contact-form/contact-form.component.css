@@ -1,3 +1,12 @@
 #message {
     height: 180px;
 }
+.successMessage{
+    background-color: palegreen;
+    border-radius: 1%;
+    border: solid grey 1px;
+    padding: 20px;
+    width: 600px;
+    max-width: 100%;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+}
