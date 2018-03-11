@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+//mitti pao
 @Component({
   selector: 'app-home-circle-card',
   templateUrl: './home-circle-card.component.html',
