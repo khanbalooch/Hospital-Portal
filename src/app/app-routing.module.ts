@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: 'careers', component: CareersComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'tenders', component: TendersComponent},
-  { path: 'otherdownloads', component: OtherDownloadsComponent}
+  { path: 'otherdownloads', component: DownloadsComponent}
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
