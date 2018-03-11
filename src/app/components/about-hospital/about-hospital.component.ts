@@ -12,4 +12,5 @@ export class AboutHospitalComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }

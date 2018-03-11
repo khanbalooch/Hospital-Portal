@@ -8,8 +8,8 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { FormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
-
 import { AppComponent } from './app.component';
+
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { CopyrightComponent } from './shared/components/copyright/copyright.component';
