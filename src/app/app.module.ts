@@ -50,6 +50,9 @@ import { ContactFormComponent } from './components/contact/contact-form/contact-
 import { ValidationService } from './shared/services/validation/validation.service';
 import { ControlMessagesComponent } from './shared/components/control-messages/control-messages.component';
 import { HomeCircleCardComponent } from './shared/components/home-circle-card/home-circle-card.component';
+import { TendersComponent } from './components/downloads/tenders/tenders.component';
+import { OtherDownloadsComponent } from './components/downloads/other-downloads/other-downloads.component';
+import { MsdsComponent } from './components/msds/msds.component';
 
 
 
@@ -94,7 +97,10 @@ import { HomeCircleCardComponent } from './shared/components/home-circle-card/ho
     GopLoaderComponent,
     ContactFormComponent,
     ControlMessagesComponent,
-    HomeCircleCardComponent
+    HomeCircleCardComponent,
+    TendersComponent,
+    OtherDownloadsComponent,
+    MsdsComponent
   ],
   imports: [
     BrowserModule,

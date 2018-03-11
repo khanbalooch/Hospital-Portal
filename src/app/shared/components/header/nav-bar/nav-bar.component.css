@@ -22,6 +22,7 @@
     background-color: white;
     font-size:15px;
     outline: none;
+    cursor: pointer;
 }
 .navbar .navbar-nav > li > a::after {
     content: '';

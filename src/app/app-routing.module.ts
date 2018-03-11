@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AboutHospitalComponent } from './components/about-hospital/about-hospital.component';
@@ -9,6 +9,9 @@ import { MessagesComponent } from './components/messages/messages.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { DownloadsComponent } from './components/downloads/downloads.component';
 import { CareersComponent } from './components/careers/careers.component';
+import { TendersComponent } from './components/downloads/tenders/tenders.component';
+import { OtherDownloadsComponent } from './components/downloads/other-downloads/other-downloads.component';
+import { MsdsComponent } from './components/msds/msds.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,9 +21,12 @@ const routes: Routes = [
   { path: 'ourstaff', component: OurStaffComponent},
   { path: 'downloads', component: DownloadsComponent},
   { path: 'revamping', component: RevampingComponent},
-  { path: 'messages', component: MessagesComponent},
+  { path: 'msds', component: MsdsComponent},
+  // { path: 'messages', component: MessagesComponent},
   { path: 'careers', component: CareersComponent},
-  { path: 'contact', component: ContactComponent}
+  { path: 'contact', component: ContactComponent},
+  { path: 'tenders', component: TendersComponent},
+  { path: 'otherdownloads', component: OtherDownloadsComponent}
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],

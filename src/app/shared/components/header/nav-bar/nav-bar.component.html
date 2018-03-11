@@ -9,49 +9,38 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li>
-          <a class="navBtn active" routerLink="/home" routerLinkActive="active">HOME</a>
-        </li>
-        <li>
-          <a class="navBtn" routerLink="/abouthospital" routerLinkActive="active">ABOUT US</a>
-        </li>
-        <li>
-          <a class="navBtn" routerLink="/services" routerLinkActive="active">SERVICES</a>
-        </li>
-        <li>
-          <a class="navBtn" routerLink="/ourstaff" routerLinkActive="active">HUMAN RESOURCE</a>
-        </li>
-        <!-------<li>
-          <a class="navBtn" routerLink="/downloads" routerLinkActive="active">DOWNLOADS</a>
-        </li>------>
+        <li><a class="navBtn active" routerLink="/home" routerLinkActive="active">HOME</a></li>
+      
+        <li><a class="navBtn" routerLink="/abouthospital" routerLinkActive="active">ABOUT US</a></li>
+      
+        <li><a class="navBtn" routerLink="/services" routerLinkActive="active">SERVICES</a></li>
+        
+        <li><a class="navBtn" routerLink="/ourstaff" routerLinkActive="active">HUMAN RESOURCE</a></li>
+        
+        <li><a class="navBtn" routerLink="/revamping" routerLinkActive="active">REVAMPING</a></li>
+        
+        <li><a class="navBtn" routerLink="/msds" routerLinkActive="active">MSDS</a></li>
+        
         <li class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
+          <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             DOWNLOADS <span class="caret"></span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li class="dropdown-item">
-              <a href="#">DOWNLOADS</a>
-            </li>
-            <li class="dropdown-item">
-              <a href="#">TENDER NOTICE</a>
-            </li>
-            <li class="dropdown-item">
+            
+            <li><a routerLink="/tenders" routerLinkActive="active">TENDER NOTICE</a></li>
+            
+            <li><a class="navBtn" routerLink="/otherdownloads" routerLinkActive="active">OTHER DOWNLOADS</a></li>
+            
+            <!--<li class="dropdown-item">
               <a class="navBtn" routerLink="/careers" routerLinkActive="active">CAREERS</a>
-            </li>
+            </li>-->
             
           </ul>
         </li>
-
-
-        <li>
-          <a class="navBtn" routerLink="/revamping" routerLinkActive="active">REVAMPING</a>
-        </li>
-        <!----<li><a class="navBtn" routerLink="/messages" routerLinkActive="active">MESSAGES</a></li>---->
         
-        <li>
-          <a class="navBtn" routerLink="/contact" routerLinkActive="active">CONTACT US</a>
-        </li>
+        <li><a class="navBtn" routerLink="/careers" routerLinkActive="active">CAREERS</a></li>
+        
+        <li><a class="navBtn" routerLink="/contact" routerLinkActive="active">CONTACT US</a></li>
       </ul>
 
     </div>
