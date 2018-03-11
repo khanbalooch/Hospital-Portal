@@ -15,12 +15,12 @@ customization by _tyb
  */
 
  /*******************************************************************/
-    window.onscroll = function() {scrollFunc()};
+    
     var header = document.getElementById("header-scroll");
     var logoImgLt = document.getElementById("logoLt");
     var logoImgRt = document.getElementById("logoRt");
     var sticky = header.offsetTop;
-    
+    var scrW = screen.width;
     
     function scrollFunc() {
       if (window.pageYOffset != sticky) {
@@ -34,6 +34,9 @@ customization by _tyb
         logoImgRt.classList.remove("minWidth");
       }
      
+    }
+    if(scrW > 768){
+      window.onscroll = function() {scrollFunc()};
     }
 /***************************************************/
   }
