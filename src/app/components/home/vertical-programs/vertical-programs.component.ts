@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare var jquery: any;
+//declare var jquery: any;
 declare var $: any;
 
 
@@ -13,8 +13,8 @@ export class VerticalProgramsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
-    $(document).ready(function () {
+ 
+    $(document).ready(function() {
       $('.itemPanel').slick({
         infinite: true,
         slidesToShow: 4,
